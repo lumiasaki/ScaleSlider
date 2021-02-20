@@ -317,10 +317,6 @@ public class ScaleSlider: UIView {
 
 extension ScaleSlider {
     
-    enum Error: Swift.Error {
-        case generateIndicesError
-    }
-    
     private static func indices(from configuration: Configuration) -> [Index] {
         let numberOfIndices = ((configuration.maximumScale - configuration.minimumScale) / configuration.scaleInterval) + 1
         
